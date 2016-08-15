@@ -598,3 +598,7 @@ body {
 a {
 	text-decoration: none;
 }
+.link-home {
+	position: fixed;
+	text-decoration: none;
+}
