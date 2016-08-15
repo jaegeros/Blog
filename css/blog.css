@@ -601,4 +601,6 @@ a {
 .link-home {
 	position: fixed;
 	text-decoration: none;
+	padding: 10px;
+	color: blue;
 }
