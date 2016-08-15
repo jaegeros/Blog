@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link href="css/blog.css" rel="stylesheet">
+    <title>Blog App</title>
+    
+
+</head>
+
+<body>
+
+<script src="functions.js"></script>
+<script>
+var wp = new wpCall('http://catrositsolutions.net/dev/sample-bootstrap');
+
+var callback = function(res){
+	console.log(res);
+}
+
+wp.getAllPosts('callback');
+</script>
+
+	<div class="container">
+
+
+		<div class="holder">
+			<h2>Man must explore, and this is exploration at its greatest</h2>
+			<p class="second">Problems look mighty small from 150 miles up</p>
+			<p class="bottom">Posted by Start Bootstrap on September 24, 2014</p>
+		</div>
+
+		<div class="holder">
+			<h2>I believe every human has a finite number of heartbeats. I dont intend to waste any of mine</h2>
+			<p>Posted by Start Bootstrap on September 18, 2014</p>
+		</div>
+
+		<div class="holder">
+			<h2>Science has not yet mastered prophecy</h2>
+			<p class="second">We predict to much for the next year and yet far too little for the next ten</p>
+			<p class="bottom">Posted by Start Bootstrap on August 24, 2014</p>
+		</div>		
+
+
+  
+		<div class="holder"p>
+			<h2>Failure is not an option</h2>
+			<p class="second">Many say exploration is part of our destiny, but it's actually our duty to future generations</p>
+			<p class="bottom">Posted by Start Bootstrap on July 8, 2014</p>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
