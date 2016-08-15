@@ -14,21 +14,6 @@
 
 <body>
 
-<script src="functions.js"></script>
-<script>
-var wp = new wpCall('http://catrositsolutions.net/dev/sample-bootstrap');
-
-var callback = function(res){
-	console.log(res);
-}
-
-wp.getAllPosts('callback');
-
-function link(color) {
-	document.getElementByClass(text).style.color = "#0085A1";
-}
-</script>
-
 	<div class="container">
 
 
@@ -58,6 +43,31 @@ function link(color) {
 		</div>
 
 	</div>
+
+<script src="functions.js"></script>
+<script>
+var wp = new wpCall('http://test.catrositsolutions.net');
+
+var callback = function(res){
+	// Start at 0; End at the number of res; Add 1 after each loop
+	for(i=0;i<=res.length;i++){
+		console.log();
+		var post = res[i];
+		var title = "The Blog";
+		console.log(title);
+
+		// How to Call Title: post.title.rendered;
+		// How to Call Content: post.content.rendered;
+	}
+
+}
+
+wp.getAllPosts('callback');
+
+function link(color) {
+	document.getElementByClass(text).style.color = "#0085A1";
+}
+</script>
 
 </body>
 
